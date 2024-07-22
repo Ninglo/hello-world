@@ -10,6 +10,9 @@
 ## 需求拆解
 
 第一步：Hello World
+
 第二步：快速笔记 -> 1. 创建笔记文件 2. 打开笔记文件（供用户编辑）
+
 第三步：触发语音输入 -> 触发 Voice: Start Dictation in Editor 命令 `workbench.action.editorDictation.start`
+
 第四步：快捷键 -> 如何用快捷键触发命令 `quickNote.createAndOpenNote`
