@@ -1,71 +1,15 @@
-# hello-world README
+# VSCode 快速语音笔记插件
 
-This is the README for your extension "hello-world". After writing up a brief description, we recommend including the following sections.
+## 需求
+实现一个 VSCode 插件，其提供快捷键供用户创建新文件，并开启语音转文字模式，以记录一些突然迸发但现在没有时间做的灵感。
 
-## Features
+## 基本思想：敏捷迭代
+- 解释：每轮开发过程只做**最最**核心的一个功能
+- 原因：人的大脑没法想象太抽象的内容，把东西做出来有助于我们进一步的思考
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 需求拆解
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+第一步：Hello World
+第二步：快速笔记 -> 1. 创建笔记文件 2. 打开笔记文件（供用户编辑）
+第三步：触发语音输入 -> 触发 Voice: Start Dictation in Editor 命令 `workbench.action.editorDictation.start`
+第四步：快捷键 -> 如何用快捷键触发命令 `quickNote.createAndOpenNote`
